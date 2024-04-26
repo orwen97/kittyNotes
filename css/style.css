@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.headerPage {
+    background: #e4ddd9;
+    height: 5rem;
+    display: flex;
+}
+
+.headerPage h1 {
+    color: #2d2d2d;
+    align-self: center;
+    padding-left: 2rem;
+    font-size: 2rem;
+}
+
+.mainClass {
+    background-image: url("../assets/background-main.png");
+    width: 100%;
+    height: 47.125rem;
+    position: static;
+}
+.navBar {
+    background-color: #f1f1f1;
+    height: 1.875rem;
+    background: #EDEDED;
+    box-shadow: 0rem 0.25rem 0.3rem rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+}
+
+.navBar a {
+    font-size: .9375rem;
+    text-decoration: none;
+    color: black;
+    padding-right: 2rem;
+    padding-left: 1rem;
+}
+
+.footerClass {
+    background-color: #e4ddd9;
+    height: 7.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: static;
+}
