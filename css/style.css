@@ -41,6 +41,8 @@
     padding-left: 1rem;
 }
 
-#month {
-    /* font-size: 55rem; */
+#numbers {
+    display: grid;
+    grid-template-columns: repeat(7, 2rem);
+    gap: 1.2rem;
 }

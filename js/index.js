@@ -6,25 +6,20 @@ const days = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
 const months = ["January", "February", "March", "April", "May", "June", 
 "July", "August", "September", "October", "November", "December"];
 
-// function para iterar numeros del mes de lista days
-function setDaysOn(array) {
-    let result = []
-    for (let i= 0; i < 30; i++) {
-        result += array[i];
-    };
-    return result;
-};
-
 // trabajando en el dom
 
 const MONTH = document.getElementById("month");
 MONTH.innerText = months[4];
 
 const NUMBERS = document.getElementById("numbers");
-NUMBERS.innerText = setDaysOn(days);
 
-//
-
-
-
-
+if(MONTH.innerText === "May") {
+    days.forEach(day => {
+        if(day < 31) {
+            let div = document.createElement("div");
+            div.className = "day";
+            div.innerText = day;
+            numbers.appendChild(div);
+            }
+    });
+};
