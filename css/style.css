@@ -41,8 +41,21 @@
     padding-left: 1rem;
 }
 
+.listDays {
+    display: grid;
+    grid-template-columns: repeat(7, 2rem);
+    gap: 1.2rem;
+    list-style: none;
+    padding-bottom: 1.2rem;
+    padding-top: 1.2rem;
+}
+
 #numbers {
     display: grid;
     grid-template-columns: repeat(7, 2rem);
     gap: 1.2rem;
+}
+
+#numbers .day1 {
+    grid-column-start: 4;
 }
