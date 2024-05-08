@@ -6,23 +6,40 @@ const days = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
 const months = ["January", "February", "March", "April", "May", "June", 
 "July", "August", "September", "October", "November", "December"];
 
+// variables with class date
+
+let today = new Date ();
+let monthDate = today.getMonth();
+let yearDate = today.getFullYear();
+
 // printing month and month numbers on dom
 
 const MONTH = document.getElementById("month");
-MONTH.innerText = months[4];
+MONTH.innerText = months[monthDate] + " " + yearDate;
 
 const NUMBERS = document.getElementById("numbers");
 
-if(MONTH.innerText === "May") {
+// months lenght code
+
+if(monthDate === 4) {
     days.forEach(day => {
-        if(day < 31) {
+        if(day < 32) {
             let div = document.createElement("div");
             div.className = `day${day}`;
             div.innerText = day;
             numbers.appendChild(div);
             }
     });
-};0.
+} else {
+    days.forEach(day => {
+        if(day < 31) {
+            let div = document.createElement("div");
+            div.className = `day${day}`;
+            div.innerText = day;
+            numbers.appendChild(div);
+        }
+    })
+}
 
 //printing days name on the calendar
 
